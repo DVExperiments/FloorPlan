@@ -1,28 +1,22 @@
-# Floorplan Studio v3.1.3
+# Floorplan Studio — Desktop & Mobile
 
-A self-contained, browser-based floor-plan and conceptual 3D house design application.
+This GitHub Pages package includes two views of the same browser-based application:
 
-## Run locally
+- `index.html`: Original desktop Floorplan Studio v3.2.1.
+- `mobile.html`: Touch-first Floorplan Studio Mobile v3.2.2.
 
-Open `index.html` in a modern desktop browser. No build, installation, dependencies, or server is required for basic use.
+Deploy all files to the same repository root with GitHub Pages enabled.
 
-## Publish with GitHub Pages
+**Desktop URL:** `https://USERNAME.github.io/REPO/`
 
-1. Create a GitHub repository (or open your existing Floorplan Studio repository).
-2. Upload the **contents** of this package to the repository root (including `index.html`). Do not upload just the ZIP.
-3. Commit the files to your default branch (often `main`).
-4. In the repository, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select your default branch and **/(root)**, then save.
-5. Once GitHub Pages has deployed, visit the URL shown under **Settings → Pages**.
+**Mobile URL:** `https://USERNAME.github.io/REPO/mobile.html`
 
-The app uses no external JavaScript libraries and no backend service.
+Because both pages are served from the same origin, they share the existing browser project library stored in localStorage. Projects are not automatically synced across different devices or browsers; use Export JSON and Import JSON to transfer. Avoid editing the same project simultaneously in two open tabs.
 
-## Saving projects
+## Mobile controls
 
-- **Save / My Projects** saves designs in the browser's local storage for the current website origin and browser profile. It is *not* a cloud account or multi-device sync.
-- **Export JSON** creates a portable backup. Use **My Projects → Import JSON** on another device to add that design to its own local library.
-- Publishing on GitHub Pages changes the site's origin compared with opening a local HTML file, so local projects do not automatically migrate. Export/import JSON to move them.
-- Clearing site data or using private browsing can erase browser-saved designs. Keep JSON backups of important work.
+The phone interface has a full-screen canvas and bottom buttons for Tools, Select, Pan, Properties, and switching between 2D and 3D. Tools and Properties open slide-up sheets. Draw and select using taps and drags; use two-finger gestures only if your browser supports them in this drawing engine. The desktop page remains the recommended interface for complex editing, technical measurements, and printing.
 
-## Important note
+## Saving and limits
 
-Floorplan Studio is for conceptual planning and visual experimentation, not construction-ready drawings, structural engineering, electrical design, or building-code certification.
+Saving uses browser storage, not an online account. Export JSON backups regularly. This is conceptual design software, not compliant construction documentation.
