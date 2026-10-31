@@ -480,10 +480,28 @@ body.mobile-props-open .inspector{display:block!important}
 @media(min-width:780px){.mobile-top-menu{max-width:980px}.mobile-dock{max-width:700px;left:50%;transform:translateX(-50%);border-left:1px solid #d7e2ed;border-right:1px solid #d7e2ed;border-radius:14px 14px 0 0}}
 @media(max-width:420px){.home-nav{flex-wrap:wrap}.home-nav>*{min-width:0}}
 
-</style><style>.top>.top-left{display:none!important}.mobile-top-menu{display:flex!important}#homePage .home-header{max-width:100%}.mobile-sheet-handle~.eyebrow{margin-top:8px}</style><style>#mobileSwitchLink{position:fixed;top:10px;right:10px;z-index:13100;background:#fff;color:#205dba;padding:8px 10px;border-radius:9px;border:1px solid #cbddee;text-decoration:none;font:700 11px system-ui;box-shadow:0 3px 14px #1a345922}</style></head><body><div id="homePage" aria-label="Floorplan Studio home">
+</style><style>.top>.top-left{display:none!important}.mobile-top-menu{display:flex!important}#homePage .home-header{max-width:100%}.mobile-sheet-handle~.eyebrow{margin-top:8px}</style><style>#mobileSwitchLink{position:fixed;top:10px;right:10px;z-index:13100;background:#fff;color:#205dba;padding:8px 10px;border-radius:9px;border:1px solid #cbddee;text-decoration:none;font:700 11px system-ui;box-shadow:0 3px 14px #1a345922}</style><link rel="icon" type="image/x-icon" href="./favicon.ico">
+<link rel="icon" type="image/png" sizes="48x48" href="./favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="theme-color" content="#205dba">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Floorplan Studio">
+<style>
+.fps-install-btn{background:#e6f3ef!important;color:#176b55!important;border:1px solid #b7dcd0!important;font-weight:800!important}
+.fps-install-btn:hover{background:#d9ece5!important}
+.fps-install-note{font-size:11px;color:#68819b;line-height:1.45;margin:9px 0 0}
+.fps-install-dialog{position:fixed;inset:0;z-index:40000;display:flex;align-items:center;justify-content:center;background:#102339b3;padding:16px}
+.fps-install-dialog[hidden]{display:none!important}
+.fps-install-card{width:min(440px,100%);max-height:90vh;overflow:auto;background:#fff;border:1px solid #dbe4ef;border-radius:18px;padding:22px;box-shadow:0 20px 60px #0f233e4a;color:#243c58}
+.fps-install-card h2{font-size:21px;margin:0 0 12px}.fps-install-card p{line-height:1.7;font-size:13px;color:#5b7189}
+.fps-install-card ol{font-size:13px;line-height:1.9;padding-left:23px;color:#354d65}
+.fps-install-card .fps-install-actions{display:flex;gap:9px;justify-content:flex-end;margin-top:18px}
+</style></head><body><div id="homePage" aria-label="Floorplan Studio home">
  <div class="home-navbar"><div class="home-nav-wrap"><div class="home-logo"><span class="home-logo-icon">⌂</span><span>FLOORPLAN <em>STUDIO</em></span></div><nav class="home-nav-items" aria-label="Home navigation"><button type="button" data-home-nav="homeWelcome">Home</button><button type="button" data-home-nav="homeProjects">My Projects</button><button type="button" data-home-nav="homeGettingStarted">Getting Started</button><button type="button" data-home-nav="homeAbout">About</button></nav><button class="home-btn primary" id="homeOpenEditor" type="button">Open Editor ↗</button></div></div>
  <div class="home-shell">
-  <section class="home-hero" id="homeWelcome"><div><div class="home-kicker">Your ideas start here · Release v3.2.1</div><h1>Design the home<br><span>you imagine.</span></h1><p>Draw your floor plan, furnish every room, explore the garden, and bring it all together in an interactive 3D dollhouse. From a quick idea to a complete dream-house concept.</p><div class="home-actions"><button class="home-btn primary" id="homeNewProject" type="button">＋ Start a new design</button><button class="home-btn" id="homeContinue" type="button">↗ Continue editing</button></div><div class="home-subnote">◈ Your designs are saved in this browser. Export JSON backups for safekeeping.</div></div>
+  <section class="home-hero" id="homeWelcome"><div><div class="home-kicker">Your ideas start here · Release v3.2.3</div><h1>Design the home<br><span>you imagine.</span></h1><p>Draw your floor plan, furnish every room, explore the garden, and bring it all together in an interactive 3D dollhouse. From a quick idea to a complete dream-house concept.</p><div class="home-actions"><button class="home-btn primary" id="homeNewProject" type="button">＋ Start a new design</button><button class="home-btn fps-install-btn" id="fpsInstallApp" type="button">⬇ Install Mobile App</button><button class="home-btn" id="homeContinue" type="button">↗ Continue editing</button></div><div class="home-subnote">◈ Your designs are saved in this browser. Export JSON backups for safekeeping.</div></div>
    <div class="home-hero-visual" aria-hidden="true"><svg class="home-plan-art" viewBox="0 0 560 330" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="home-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#bfd5e9" stroke-width=".7"/></pattern><pattern id="home-wood" width="32" height="17" patternUnits="userSpaceOnUse"><path d="M0 0H32M16 0V17" fill="none" stroke="#d0b69a" stroke-width="1"/></pattern></defs><rect width="560" height="330" rx="12" fill="url(#home-grid)"/><g transform="translate(78 34) rotate(-2 220 130)"><path d="M7 20H245V85H385V268H7Z" fill="#f1eee7" stroke="#263a4c" stroke-width="10" stroke-linejoin="miter"/><path d="M12 22H240V86H382V263H12Z" fill="url(#home-wood)" opacity=".55"/><path d="M8 152H245M245 20V268M245 174H383" stroke="#263a4c" stroke-width="8" fill="none"/><rect x="38" y="47" width="115" height="69" rx="12" fill="#7fa79a" stroke="#668d82" stroke-width="4"/><rect x="39" y="45" width="115" height="19" rx="8" fill="#698f83"/><rect x="154" y="60" width="48" height="42" rx="5" fill="#d6c2a9"/><rect x="44" y="179" width="85" height="64" rx="4" fill="#a9c3c0"/><rect x="44" y="179" width="85" height="22" rx="3" fill="#fafafa"/><rect x="57" y="185" width="30" height="11" rx="3" fill="#e8dfd6"/><rect x="90" y="185" width="30" height="11" rx="3" fill="#e8dfd6"/><rect x="157" y="178" width="64" height="42" rx="7" fill="#d8c0a3"/><rect x="161" y="184" width="56" height="30" rx="5" fill="#e5d0b8"/><rect x="274" y="106" width="93" height="47" rx="4" fill="#e7e4df" stroke="#b8c5c9" stroke-width="3"/><circle cx="292" cy="128" r="9" fill="#b9cbd0"/><circle cx="324" cy="128" r="9" fill="#b9cbd0"/><rect x="274" y="192" width="80" height="59" rx="12" fill="#dce6df" stroke="#8baca1" stroke-width="4"/><path d="M280 208H347" stroke="#8baca1" stroke-width="4"/><path d="M136 151H184M242 124V149M246 204V233" stroke="#f6f8fa" stroke-width="11"/><path d="M136 151A48 48 0 0 1 184 103M242 149A27 27 0 0 0 215 122" fill="none" stroke="#839daf" stroke-width="2"/><path d="M7 82H7M99 16H151M382 213V249" stroke="#69c1df" stroke-width="9"/></g></svg><div class="home-float-chip one">⌂ Ground Floor · 2D plan</div><div class="home-float-chip two">◈ Switch to 3D anytime</div></div>
   </section>
   <section class="home-section" id="homeProjects"><div class="home-section-head"><div><div class="home-kicker">Your creative workspace</div><h2>My Projects</h2><p>Pick up where you left off, or start somewhere new.</p></div><button class="home-btn light" id="homeManageProjects" type="button">Manage library ↗</button></div><div class="home-project-toolbar"><input id="homeProjectSearch" type="search" placeholder="Search saved projects…" aria-label="Search saved projects"><div class="home-project-buttons"><button class="home-btn small" id="homeImportProject" type="button">↑ Import JSON</button><button class="home-btn small primary" id="homeProjectNew" type="button">＋ New Project</button></div></div><div class="home-project-grid" id="homeProjectGrid" aria-live="polite"></div></section>
@@ -4161,5 +4179,38 @@ initializeProjectLibrary();
  window.addEventListener('resize',()=>{if(window.innerWidth>770)closeSheets()});
  update();
 })();
+})();
+</script><div class="fps-install-dialog" id="fpsInstallDialog" role="dialog" aria-modal="true" aria-labelledby="fpsInstallTitle" hidden>
+<div class="fps-install-card"><h2 id="fpsInstallTitle">Install Floorplan Studio</h2><div id="fpsInstallInstructions"></div><div class="fps-install-actions"><button class="home-btn primary" id="fpsInstallClose" type="button">Got it</button></div></div></div>
+<script>
+(()=>{
+ 'use strict';
+ if('serviceWorker' in navigator && location.protocol==='https:'){
+   window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js',{scope:'./'}).catch(err=>console.warn('Offline app registration failed:',err)));
+ }
+ let installEvent=null;
+ const button=document.getElementById('fpsInstallApp'),dialog=document.getElementById('fpsInstallDialog');
+ const instructions=document.getElementById('fpsInstallInstructions'),close=document.getElementById('fpsInstallClose');
+ const installed=()=>window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone===true;
+ function refresh(){if(!button)return;if(installed()){button.textContent='✓ App installed';button.disabled=true;}else{button.disabled=false;button.textContent='⬇ Install Mobile App';}}
+ window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installEvent=event;refresh();});
+ window.addEventListener('appinstalled',()=>{installEvent=null;refresh();dialog.hidden=true;});
+ function guidance(){
+  const ua=navigator.userAgent||'',iOS=/iPhone|iPad|iPod/i.test(ua),android=/Android/i.test(ua);
+  if(location.protocol==='file:')return '<p>Installation requires the hosted GitHub Pages website. Open your site using its HTTPS address on your phone.</p>';
+  if(iOS)return '<p>Install Floorplan Studio from Safari:</p><ol><li>Open this website in <strong>Safari</strong> on your iPhone or iPad.</li><li>Tap <strong>Share</strong> (the square with an upward arrow).</li><li>Choose <strong>Add to Home Screen</strong>, then tap <strong>Add</strong>.</li></ol><p>The app will have its own Floorplan Studio icon. If you are in another browser, open the page in Safari first.</p>';
+  if(android)return '<p>To install from Chrome on Android:</p><ol><li>Open the Floorplan Studio website in Chrome.</li><li>Tap the <strong>⋮</strong> browser menu.</li><li>Select <strong>Install app</strong> or <strong>Add to Home screen</strong> (wording depends on Chrome).</li></ol><p>If Chrome only offers a shortcut, reload after the site is fully deployed. The install option can depend on browser support.</p>';
+  return '<p>Open Floorplan Studio on your phone using the <strong>mobile.html</strong> address.</p><p>On Android Chrome, use <strong>Install app</strong> from the browser menu. On iPhone, use Safari’s <strong>Share → Add to Home Screen</strong>. You can also use Chrome’s Install button on supported desktop browsers.</p>';
+ }
+ function show(){instructions.innerHTML=guidance();dialog.hidden=false;close.focus();}
+ if(button)button.addEventListener('click',async()=>{
+  if(installed())return;
+  if(installEvent){const evt=installEvent;installEvent=null;try{await evt.prompt();await evt.userChoice;}catch(e){console.warn('Install prompt:',e);}refresh();return;}
+  show();
+ });
+ close.addEventListener('click',()=>{dialog.hidden=true;button?.focus()});
+ dialog.addEventListener('click',e=>{if(e.target===dialog){dialog.hidden=true;button?.focus()}});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!dialog.hidden){dialog.hidden=true;button?.focus()}});
+ refresh();
 })();
 </script></body></html>
